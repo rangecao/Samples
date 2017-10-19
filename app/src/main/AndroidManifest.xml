@@ -16,9 +16,23 @@
             </intent-filter>
         </activity>
 
-
         <activity android:name=".animation.Transitions"
             android:label="Animation/Transition">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".animation.TransitionsForCall"
+            android:label="Animation/Transition when incomming call">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".widget.ShowDataActivity"
+            android:label="widget/ShowData">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="rangecao.categary.sample" />

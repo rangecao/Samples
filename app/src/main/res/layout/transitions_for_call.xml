@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#FFEEEEEE"
+    android:id="@+id/buttons"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="来电 10086"
+        />
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_2">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fullscreen"
+                android:contentDescription="全屏通话"
+                android:src="@drawable/float_window_end"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                style="@style/callbutton"
+                />
+
+            <ImageView
+                android:id="@+id/answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/float_window_answer"
+                style="@style/callbutton"
+                />
+
+        </FrameLayout>
+
+
+
+        <ImageView
+            android:id="@+id/answer2"
+            android:src="@drawable/float_window_answer"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/callbutton"
+            />
+
+        <ImageView
+            android:id="@+id/endcall"
+            android:src="@drawable/float_window_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/callbutton"/>
+
+
+    </LinearLayout>
+</LinearLayout>

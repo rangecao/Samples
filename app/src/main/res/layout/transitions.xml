@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF0000"
+    android:id="@+id/container"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_signal_airplane_enable_animation"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#00FF00"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/topbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hide self"
+            android:singleLine="true"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/resize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="resize self"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bottom"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
