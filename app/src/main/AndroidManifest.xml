@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rangecao.samples">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,6 +41,62 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".drawable.DrawablestateActivity"
+            android:label="drawable/Drawable State">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".drawable.Transition"
+            android:label="drawable/Transition">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".drawable.BitmapActivity"
+            android:label="drawable/Bitmap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".fragment.FragmentStack"
+            android:label="fragment/stack">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".contacts.ContactsList"
+            android:label="contacts/ContactsList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".res.AssetManagerActivity"
+            android:label="res/AssetManagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".drawable.ShadeActivity"
+            android:label="drawable/ShadeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
