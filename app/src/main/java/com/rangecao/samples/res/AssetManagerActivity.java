@@ -2,7 +2,7 @@ package com.rangecao.samples.res;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
-import android.content.res.ResourcesImpl;
+//import android.content.res.ResourcesImpl;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -32,28 +32,28 @@ public class AssetManagerActivity extends AppCompatActivity{
 //        Log.e("range.cao","dimen:"+dimen);
 
 
-        AssetManager assetManager = new AssetManager();
-        int result = assetManager.addAssetPath("/system/app/miui/miui.apk");
-        //int result2 = assetManager.addOverlayPath("/system/media/journeyui-theme/overlay/theme2/miui.apk");
-        Resources resources = new Resources(assetManager,null,getResources().getConfiguration());
-
-        float dimen22 = resources.getDimension(0x100a0011);
-
-        Log.e("range.cao","dimen overlay:"+dimen22);
-
-        testMessaging();
+//        AssetManager assetManager = new AssetManager();
+//        int result = assetManager.addAssetPath("/system/app/miui/miui.apk");
+//        //int result2 = assetManager.addOverlayPath("/system/media/journeyui-theme/overlay/theme2/miui.apk");
+//        Resources resources = new Resources(assetManager,null,getResources().getConfiguration());
+//
+//        float dimen22 = resources.getDimension(0x100a0011);
+//
+//        Log.e("range.cao","dimen overlay:"+dimen22);
+//
+//        testMessaging();
     }
 
     private void testMessaging(){
-        AssetManager assetManager = new AssetManager();
-        assetManager.addAssetPath("/system/priv-app/messaging/messaging.apk");
-        Resources resources = new Resources(assetManager,null,getResources().getConfiguration());
-        int color = resources.getColor(0x7f0d00a2);
-        Log.e("range.cao","color:"+ Integer.toHexString(color));
-
-        assetManager.addOverlayPath("/system/media/journeyui-theme/overlay/theme2/messaging.apk");
-        color = resources.getColor(0x7f0d00a2);
-        Log.e("range.cao","color overlay:"+ Integer.toHexString(color));
+//        AssetManager assetManager = new AssetManager();
+//        assetManager.addAssetPath("/system/priv-app/messaging/messaging.apk");
+//        Resources resources = new Resources(assetManager,null,getResources().getConfiguration());
+//        int color = resources.getColor(0x7f0d00a2);
+//        Log.e("range.cao","color:"+ Integer.toHexString(color));
+//
+//        assetManager.addOverlayPath("/system/media/journeyui-theme/overlay/theme2/messaging.apk");
+//        color = resources.getColor(0x7f0d00a2);
+//        Log.e("range.cao","color overlay:"+ Integer.toHexString(color));
 
     }
 }

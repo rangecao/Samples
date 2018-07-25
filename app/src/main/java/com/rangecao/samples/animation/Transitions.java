@@ -57,14 +57,6 @@ public class Transitions extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.topbutton: {
-
-                AnimatedVectorDrawable anim = (AnimatedVectorDrawable) mImageView.getDrawable();
-                anim.start();
-                if(true){
-                    return;
-                }
-
-
                 //AutoTransition autoTransition = new AutoTransition();
                 //Fade autoTransition =  new Fade(Fade.OUT);
                 //ChangeBounds autoTransition = new ChangeBounds();

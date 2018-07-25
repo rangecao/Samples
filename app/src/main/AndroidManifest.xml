@@ -97,6 +97,24 @@
                 <category android:name="rangecao.categary.sample" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".drawable.AnimatedVectorDrawable"
+            android:label="drawable/AnimatedVectorDrawable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".view.TouchEvent"
+            android:label="view/TouchEvent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
