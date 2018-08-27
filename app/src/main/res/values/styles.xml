@@ -14,4 +14,8 @@
     </style>
 
 
+    <style name="test">
+        <item name="android:layout_width">100dp</item>
+    </style>
+
 </resources>

@@ -3,6 +3,7 @@
     package="com.rangecao.samples">
 
     <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -11,11 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
         <activity android:name=".animation.Transitions"
@@ -115,6 +116,97 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".drawable.GradientDrawableA"
+            android:label="drawable/GradientDrawableA">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".widget.EditTextA"
+            android:label="widget/EditText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".content.PackageManagerA"
+            android:label="content/PackageManager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".widget.SeekBarA"
+            android:label="widget/SeekBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".theme.JoyThemeActivity"
+            android:label="theme/JoyThemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".graphics.ColorMatrixA"
+            android:label="graphics/ColorMatrix"
+            android:icon="@drawable/test"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".widget.RecylerViewA"
+            android:label="widget/RecylerView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="rangecao.categary.sample" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".app.TestActivity"
+            android:label="app/TestActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SEND" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<data android:mimeType="*/*"/>-->
+            <!--</intent-filter>-->
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.android.package-archive"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
